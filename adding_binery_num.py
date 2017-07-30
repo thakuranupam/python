@@ -2,7 +2,7 @@
 
 dec_num = []
 
-class _NUM_TO_DEC():
+class NUMtoDEC():
     """ This Class will Convert Binary to Decimal """
     def __init__(self, num):
         self.num = num
@@ -21,7 +21,7 @@ class _NUM_TO_DEC():
         dec_num.append(dec)
         print "\nBinary of %s to Decimal is %s\n" %(''.join(str(i) for i in self.num), dec)
         
-class _ADD_NUM_DEC():
+class ADDnumDEC():
     """ This Class will ADD the Decimal Numbers """
     def __init__(self, dec_num):
         self.dec_num = dec_num
@@ -33,7 +33,7 @@ class _ADD_NUM_DEC():
                 add = int(i) + add
         return add
     
-class _DEC_TO_BIN():
+class DECtoBIN():
     """ This Class will Convert Decimal to Binary """
     def __init__(self, add_dec):
         self.add_dec = add_dec
@@ -55,16 +55,15 @@ class _DEC_TO_BIN():
 i = 1
 j = int(raw_input("Number of Binary Numbers to ADD ? "))
 while i <= j:
-    num_dec = _NUM_TO_DEC(list(raw_input("Enter Number%s Binary Number : "%i)))
+    num_dec = NUMtoDEC(list(raw_input("Enter Number%s Binary Number : "%i)))
     num_dec.num_dec()
     i += 1
 
 
-add_num_dec = _ADD_NUM_DEC(dec_num)
+add_num_dec = ADDnumDEC(dec_num)
 add_dec = add_num_dec.add_num_dec()
 print "Decimal Addition is : ", add_dec 
-add_num_bin = _DEC_TO_BIN(add_dec)
+add_num_bin = DECtoBIN(add_dec)
 add_num_bin.con_dec_to_bin()
 
                 # END OF PROGRAM #
-
