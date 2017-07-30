@@ -1,4 +1,4 @@
-# Program to Add Binary Numbers 
+# Program to Add Binary Numbers without inbuilt functions. 
 
 dec_num = []
 
